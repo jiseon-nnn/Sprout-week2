@@ -1,0 +1,33 @@
+#root {
+  box-sizing: border-box;
+  max-width: 600px;
+  height: 700px;
+  margin: 100px auto;
+  padding: 2rem;
+  text-align: center;
+  background-color:blanchedalmond;
+  border-radius: 20px;
+}
+
+p {
+  font-weight: 900;
+  font-size: 4rem;
+  margin: 20px;
+  color: burlywood;
+  text-shadow: 3px 2px 1px brown;
+  font-family: serif;
+}
+.todoList {
+  height: 400px;
+  margin: 40px 0;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  gap: 20px;
+  background-color:rgb(249, 223, 189);
+}
+
+.todoInput {
+  display: flex;
+}
