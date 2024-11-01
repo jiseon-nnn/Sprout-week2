@@ -30,7 +30,6 @@ function TodoInput({ list, setList }) {
   return (
     <div>
       <input
-        className='list-none'
         type="text"
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
