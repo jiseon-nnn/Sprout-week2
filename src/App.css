@@ -24,10 +24,42 @@ p {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  gap: 20px;
   background-color:rgb(249, 223, 189);
 }
 
 .todoInput {
   display: flex;
+}
+
+.input_text {
+  width: 250px;
+  margin-right: 20px;
+  flex-grow: 1;
+}
+.text {
+  padding: 4px 20px;
+  flex-grow: 1;
+  text-align: left;
+}
+
+button {
+  height: 25px;
+  margin: 2px;
+  background-color: rgb(252, 176, 168);
+  color: rgb(57, 56, 56);
+  border: 0;
+  border-radius: 7px;
+  box-shadow: 1px 1px 1px 1px salmon;
+}
+
+button:active {
+  background-color: salmon;
+  box-shadow: 2px 2px 2px 2px rgb(252, 176, 168);
+}
+
+
+hr {
+  background-color: rgb(195, 193, 193);
+  height: 1px;
+  border: 0;
 }

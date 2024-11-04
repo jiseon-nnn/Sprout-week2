@@ -30,7 +30,9 @@ function TodoInput({ list, setList }) {
   return (
     <div>
       <input
+        className='input_text'
         type="text"
+        placeholder='할일을 입력하세요'
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
       />
@@ -72,11 +74,13 @@ function Todo({ item, setList }) {
   }
 
   return (
+    <div>
     <li className='todoInput'>
       <input type="checkbox" />
       {isEditing ? (
       <>
-        <input  
+        <input
+          className='input_text'
           type="text"
           value={editValue}
           onChange={(e) => setEditValue(e.target.value)}
@@ -84,12 +88,14 @@ function Todo({ item, setList }) {
         <button onClick={handleUpdate}>완료</button>
         </>) : (
         <>
-          {item.value}
+          <span className='text'>{item.value}</span>
           <button onClick={handleEdit}>수정</button>
         </>
       )}
       <button onClick={handleDelete}>삭제</button>
     </li>
+    <hr />
+    </div>
   )
 }
 
